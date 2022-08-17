@@ -2,6 +2,9 @@ name: Provider Checks
 
 on:
   workflow_dispatch:
+  
+  schedule:
+    - cron: "*/30 * * * *"
 
 env:
   AWS_DEFAULT_REGION: us-west-2
